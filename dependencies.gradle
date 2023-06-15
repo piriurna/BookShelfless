@@ -1,0 +1,47 @@
+ext {
+    versions = [
+            kotlin              : '1.6.0',
+            coreKtx             : '1.10.1',
+            appcompat           : '1.6.1',
+            material            : '1.9.0',
+            constraintLayout    : '2.1.4',
+            lifecycle           : '2.6.1',
+            navigation          : '2.6.0',
+            retrofit            : '2.9.0',
+            moshi               : '1.12.0',
+            dagger              : '2.40.5',
+            rxjava              : '3.1.6',
+            rxjavaAdapter       : '3.0.0',
+            room                : '2.4.1',
+            junit               : '4.13.2',
+            androidTestJunit    : '1.1.5',
+            espressoCore        : '3.5.1',
+            converterGson       : '2.9.0'
+    ]
+
+    libs = [
+            kotlinStdLib        : "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin}",
+            coreKtx             : "androidx.core:core-ktx:${versions.coreKtx}",
+            appcompat           : "androidx.appcompat:appcompat:${versions.appcompat}",
+            material            : "com.google.android.material:material:${versions.material}",
+            constraintLayout    : "androidx.constraintlayout:constraintlayout:${versions.constraintLayout}",
+            lifecycleLiveDataKtx: "androidx.lifecycle:lifecycle-livedata-ktx:${versions.lifecycle}",
+            lifecycleViewModelKtx: "androidx.lifecycle:lifecycle-viewmodel-ktx:${versions.lifecycle}",
+            navigationFragmentKtx: "androidx.navigation:navigation-fragment-ktx:${versions.navigation}",
+            navigationUiKtx     : "androidx.navigation:navigation-ui-ktx:${versions.navigation}",
+            retrofit            : "com.squareup.retrofit2:retrofit:${versions.retrofit}",
+            moshi               : "com.squareup.moshi:moshi:${versions.moshi}",
+            moshiKotlin         : "com.squareup.moshi:moshi-kotlin:${versions.moshi}",
+            dagger              : "com.google.dagger:dagger:${versions.dagger}",
+            daggerCompiler      : "com.google.dagger:dagger-compiler:${versions.dagger}",
+            rxjava              : "io.reactivex.rxjava3:rxjava:${versions.rxjava}",
+            roomRuntime         : "androidx.room:room-runtime:${versions.room}",
+            roomKtx            : "androidx.room:room-ktx:${versions.room}",
+            roomCompiler        : "androidx.room:room-compiler:${versions.room}",
+            junit               : "junit:junit:${versions.junit}",
+            androidTestExtJunit : "androidx.test.ext:junit:${versions.androidTestJunit}",
+            espressoCore        : "androidx.test.espresso:espresso-core:${versions.espressoCore}",
+            rxjavaAdapter       : "com.github.akarnokd:rxjava3-retrofit-adapter:${versions.rxjavaAdapter}",
+            converterGson       : "com.squareup.retrofit2:converter-gson:${versions.converterGson}"
+    ]
+}
