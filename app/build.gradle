@@ -2,16 +2,17 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'org.jetbrains.kotlin.kapt'
+    id 'kotlin-kapt'
 }
 
 android {
     namespace 'com.piriurna.bookshelfless'
-    compileSdk 33
+    compileSdk 32
 
     defaultConfig {
         applicationId "com.piriurna.bookshelfless"
         minSdk 26
-        targetSdk 33
+        targetSdk 32
         versionCode 1
         versionName "1.0"
 
@@ -25,8 +26,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     kotlinOptions {
         jvmTarget = '1.8'
@@ -38,29 +39,38 @@ android {
 
 dependencies {
 
-    implementation libs.kotlinStdLib
-    implementation libs.coreKtx
-    implementation libs.appcompat
-    implementation libs.material
-    implementation libs.constraintLayout
-    implementation libs.lifecycleLiveDataKtx
-    implementation libs.lifecycleViewModelKtx
-    implementation libs.navigationFragmentKtx
-    implementation libs.navigationUiKtx
-    implementation libs.retrofit
-    implementation libs.moshi
-    implementation libs.moshiKotlin
-    implementation libs.dagger
-    kapt libs.daggerCompiler
-    implementation libs.rxjava
-    implementation libs.rxjavaAdapter
-    implementation libs.roomRuntime
-    implementation libs.roomKtx
-    kapt libs.roomCompiler
-    testImplementation libs.junit
-    androidTestImplementation libs.androidTestExtJunit
-    androidTestImplementation libs.espressoCore
-    implementation libs.converterGson
+    implementation rootProject.libs.coreKtx
+    implementation rootProject.libs.appcompat
+    implementation rootProject.libs.material
+    implementation rootProject.libs.constraintLayout
+    implementation rootProject.libs.lifecycleLiveDataKtx
+    implementation rootProject.libs.lifecycleViewModelKtx
+    implementation rootProject.libs.navigationFragmentKtx
+    implementation rootProject.libs.navigationUiKtx
+    implementation rootProject.libs.retrofit
+    implementation rootProject.libs.moshi
+    implementation rootProject.libs.moshiKotlin
+    implementation rootProject.libs.dagger
+    implementation rootProject.libs.daggerAndroid
+    implementation rootProject.libs.daggerAndroidSupport
+    implementation rootProject.libs.daggerAndroidProcessor
+    kapt rootProject.libs.daggerCompiler
+    implementation rootProject.libs.rxjava
+    implementation rootProject.libs.rxjavaAdapter
+    implementation rootProject.libs.roomRuntime
+    implementation rootProject.libs.roomKtx
+    kapt rootProject.libs.roomCompiler
+    testImplementation rootProject.libs.junit
+    androidTestImplementation rootProject.libs.androidTestExtJunit
+    androidTestImplementation rootProject.libs.espressoCore
+    implementation rootProject.libs.converterGson
 
-    implementation("androidx.paging:paging-runtime:3.1.1")
+    implementation rootProject.libs.pagingRuntime
+    implementation rootProject.libs.glide
+    implementation rootProject.libs.roomPaging
+
+    implementation rootProject.libs.okHttp
+    implementation rootProject.libs.loggingInterceptor
+
+
 }

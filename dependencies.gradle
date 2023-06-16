@@ -1,22 +1,25 @@
 ext {
     versions = [
             kotlin              : '1.6.0',
-            coreKtx             : '1.10.1',
-            appcompat           : '1.6.1',
+            coreKtx             : '1.7.0',
+            appcompat           : '1.4.1',
             material            : '1.9.0',
             constraintLayout    : '2.1.4',
-            lifecycle           : '2.6.1',
-            navigation          : '2.6.0',
-            retrofit            : '2.9.0',
+            lifecycle           : '2.4.1',
+            navigation          : '2.1.0',
             moshi               : '1.12.0',
-            dagger              : '2.40.5',
             rxjava              : '3.1.6',
             rxjavaAdapter       : '3.0.0',
-            room                : '2.4.1',
             junit               : '4.13.2',
             androidTestJunit    : '1.1.5',
             espressoCore        : '3.5.1',
-            converterGson       : '2.9.0'
+            converterGson       : '2.9.0',
+            room                : '2.4.3',
+            dagger              : '2.37',
+            retrofit            : '2.9.0',
+            okHttp              : '5.0.0-alpha.2',
+            pagingRuntime       : '3.1.1',
+            glide               : '4.15.1',
     ]
 
     libs = [
@@ -34,14 +37,22 @@ ext {
             moshiKotlin         : "com.squareup.moshi:moshi-kotlin:${versions.moshi}",
             dagger              : "com.google.dagger:dagger:${versions.dagger}",
             daggerCompiler      : "com.google.dagger:dagger-compiler:${versions.dagger}",
+            daggerAndroid       : "com.google.dagger:dagger-android:${versions.dagger}",
+            daggerAndroidSupport: "com.google.dagger:dagger-android-support:${versions.dagger}",
+            daggerAndroidProcessor: "com.google.dagger:dagger-android-processor:${versions.dagger}",
             rxjava              : "io.reactivex.rxjava3:rxjava:${versions.rxjava}",
             roomRuntime         : "androidx.room:room-runtime:${versions.room}",
             roomKtx            : "androidx.room:room-ktx:${versions.room}",
             roomCompiler        : "androidx.room:room-compiler:${versions.room}",
+            roomPaging          : "androidx.room:room-paging:${versions.room}",
             junit               : "junit:junit:${versions.junit}",
             androidTestExtJunit : "androidx.test.ext:junit:${versions.androidTestJunit}",
             espressoCore        : "androidx.test.espresso:espresso-core:${versions.espressoCore}",
             rxjavaAdapter       : "com.github.akarnokd:rxjava3-retrofit-adapter:${versions.rxjavaAdapter}",
-            converterGson       : "com.squareup.retrofit2:converter-gson:${versions.converterGson}"
+            converterGson       : "com.squareup.retrofit2:converter-gson:${versions.converterGson}",
+            okHttp              : "com.squareup.okhttp3:okhttp:${versions.okHttp}",
+            loggingInterceptor  : "com.squareup.okhttp3:logging-interceptor:${versions.okHttp}",
+            pagingRuntime       : "androidx.paging:paging-runtime:${versions.pagingRuntime}",
+            glide               : "com.github.bumptech.glide:glide:${versions.glide}",
     ]
 }
